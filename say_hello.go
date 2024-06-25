@@ -1,7 +1,10 @@
 package greetingmodule
 
+import "fmt"
+
 func SayHello(name string) string {
-	return "Hello " + name + ", selamat datang di go programming"
+	result := fmt.Sprintf("Hello %v, selamat datang di go programming", name)
+	return result
 }
 
 func SayGreeting() string {
